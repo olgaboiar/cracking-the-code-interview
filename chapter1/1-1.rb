@@ -6,7 +6,6 @@ def unique (string)
         j = i + 1
         while j < string.length + 1
             if string[i] == string[j]
-                puts "not unique"
                 return false
             else
                 j += 1
@@ -14,7 +13,6 @@ def unique (string)
         end
         i += 1
     end
-    puts "unique"
     return true
 end
 
@@ -25,16 +23,13 @@ def unique (string)
     hashes = Hash.new(false)
     while i < string.length
         value = string[i]
-        puts value
         if hashes[value] == true
-            puts "not unique"
             return false
         else
             hashes[value] = true
         end
         i += 1
     end
-    puts "unique"
     return true
 end
 
