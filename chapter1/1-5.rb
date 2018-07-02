@@ -8,12 +8,13 @@ def oneAway(string1, string2)
         for i in (0..string1.length - 1)
             if string1[i] != string2[i]
                 count += 1
+                if count > 1
+                    return false
+                end
             end
             i +=1
         end
-        if count == 1
-            return true
-        else
+        if count == 0
             return false
         end
     when 1
