@@ -5,9 +5,9 @@ def zero_matrix(matrix)
         for k in (0..matrix[i].length - 1)
             if matrix[i][k] == 0
                 matrix[i].each do |elem|
-                    puts elem
+                    
                     elem = 0
-                    puts elem
+                    
                 end
                 # matrix [i + 1][k] = 0
             end
