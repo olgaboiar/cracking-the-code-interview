@@ -8,6 +8,8 @@ def zero_matrix(matrix)
             for k in (0..row.length - 1)
                 row[k] = 0
             end
+
+            puts k
         end
     end
     puts matrix.join(", ")
